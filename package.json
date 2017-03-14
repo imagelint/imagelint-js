@@ -1,0 +1,22 @@
+{
+  "name": "imagelint",
+  "version": "1.0.0",
+  "description": "The JS library to interact with imagelint.com",
+  "main": "./index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imagelint/imagelint-js.git"
+  },
+  "keywords": [
+    "imagelint",
+    "compression",
+    "image-compression",
+    "image-optimization"
+  ],
+  "author": "Sopamo GmbH",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/imagelint/imagelint-js/issues"
+  },
+  "homepage": "https://github.com/imagelint/imagelint-js#readme"
+}
