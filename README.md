@@ -1,4 +1,5 @@
 # Imagelint JS
+[![Build Status](https://travis-ci.org/imagelint/imagelint-js.svg?branch=master)](https://travis-ci.org/imagelint/imagelint-js)
 
 A library to convert your image URLs to Imagelint URLs
 
