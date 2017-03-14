@@ -18,5 +18,16 @@
   "bugs": {
     "url": "https://github.com/imagelint/imagelint-js/issues"
   },
-  "homepage": "https://github.com/imagelint/imagelint-js#readme"
+  "homepage": "https://github.com/imagelint/imagelint-js#readme",
+  "scripts": {
+    "test": "./node_modules/karma/bin/karma start --single-run --browsers PhantomJS"
+  },
+  "devDependencies": {
+    "jasmine-core": "^2.5.2",
+    "karma": "^1.5.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-requirejs": "^1.1.0",
+    "requirejs": "^2.3.3"
+  }
 }

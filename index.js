@@ -1,26 +1,26 @@
 (function() {
     var root = 'https://a1.imagelint.com';
-    
+
     function isValidURL(url) {
         return url.substr(0, 7) === 'http://' || url.substr(0, 8) === 'https://';
     }
-    
+
     function error(message) {
         throw message;
     }
-    
+
     function removeProtocol(url) {
         return url.replace(/^https?:\/\//, '');
     }
-    
+
     function removeFragment(url) {
         return url.replace(/#.*$/, '')
     }
-    
+
     function sanitize(url) {
         return removeProtocol(removeFragment(url));
     }
-    
+
     function getURLParams(params) {
         var mappings = {
             width: 'il-width',
@@ -40,7 +40,7 @@
         }
         return newParams;
     }
-    
+
     function stringifyParams(url, params) {
         var urlParams = getURLParams(params);
         if (!urlParams) {
@@ -53,11 +53,11 @@
         }
         return (hasQueryParams ? '&' : '?') + paramsArray.join('&');
     }
-    
+
     function build(url, params) {
         return root + '/' + sanitize(url) + stringifyParams(url, params);
     }
-    
+
     var Imagelint = {
         get: function(url, params) {
             if(!isValidURL(url)) {
@@ -71,5 +71,5 @@
         module.exports = Imagelint;
     } else {
         window.Imagelint = Imagelint;
-    }    
+    }
 })();
