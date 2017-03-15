@@ -1,5 +1,6 @@
 # Imagelint JS
 [![Build Status](https://travis-ci.org/imagelint/imagelint-js.svg?branch=master)](https://travis-ci.org/imagelint/imagelint-js)
+[![codecov](https://codecov.io/gh/imagelint/imagelint-js/branch/master/graph/badge.svg)](https://codecov.io/gh/imagelint/imagelint-js)
 
 A library to convert your image URLs to Imagelint URLs
 
